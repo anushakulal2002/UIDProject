@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --main-color:hsl(2, 100%, 61%);
+    --primary-color:hsl(3, 62%, 80%);
+    --bg-color: hsl(2, 100%, 97%)b;
+    --hover: hsl(2, 89%, 53%);
+    --black:#222;
+    --white:#fff;
+    --border:.1rem solid hsl(0, 54%, 84%);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Dosis', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    margin-top: 4rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    background: var(--main-color);
+    border: var(--main-color);
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+}
+
+.btn:hover{
+    background: var(--hover);
+}
+
+
+/* nav bar */
+
+
+#nav{
+  margin-bottom: auto;
+  width: 100%;
+  height: 8%;
+} 
+
+.topnav {
+    overflow: visible;
+    background-color: hsl(2, 100%, 97%);
+    position: fixed;
+    width:inherit;
+    height: 10%;
+  }
+  
+  .topnav a {
+    margin-top: 1%;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color: hsl(2, 100%, 61%);
+    text-decoration: underline;
+  }
+  
+  .topnav a.active {
+    color: black;
+    color: hsl(2, 100%, 61%);
+  }
+
+/* order */
+
+.order form{
+    padding: 2rem;
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+}
+
+.order form .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.order form .box-container .box{
+    flex: 1 1 41rem;
+}
+
+.order form .box-container .box .inputBox input,
+.order form .box-container .box .inputBox textarea{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    border: var(--border);
+}
+
+.order form .box-container .box .inputBox input::placeholder,
+.order form .box-container .box .inputBox textarea::placeholder{
+    text-transform: capitalize;
+}
+
+.order form .box-container .box .inputBox input:focus,
+.order form .box-container .box .inputBox textarea:focus{
+    background: var(--main-color);
+    color: var(--white);
+}
+
+.order form .box-container .box .inputBox input:focus::placeholder,
+.order form .box-container .box .inputBox textarea:focus::placeholder{
+    color: #e8aeae;
+}
+
+.order form .box-container .box .inputBox textarea{
+    height: 20rem;
+    resize: none;
+}
+
+.order form .box-container .box .inputBox .map{
+    height: 20rem;
+    width: 100%;
+    margin: 1rem 0;
+    border: none;
+}
+
+.order form .box-container .box .inputBox span{
+    color: var(--main-color);
+    font-size: 2rem;
+}

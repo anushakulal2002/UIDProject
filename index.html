@@ -1,0 +1,119 @@
+<!DOCTYPE html>  
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Responsive juice website - Penny's Juice</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+              <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Penny's<span> Juice</span>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link active-link">Home</a>
+                        </li>
+                      
+                        <li class="nav__item">
+                            <a href="menu.html" class="nav__link">Menu</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="order.html" class="nav__link">Order Now</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="aboutus.html" class="nav__link">About</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i> 
+                    </div>
+
+                    <img src="img\navimg.png" alt="nav image" class="nav__img">
+                </div>
+
+                <!--Toggle buttons-->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+              </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home">
+                <div class="home__shape-small"></div>
+                <div class="home__shape-big"></div>
+                <img src="img/shape-bg.png" alt="shape background" class="home__shape-bg">
+
+
+                <div class="home__container container"> 
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Get Fresh
+                            <span>Penny's Juices</span>
+                            Everyday
+                        </h1>
+                        <p class="home__description"> 
+                            100% blended fruit juice concentrate 
+                            specifically designed for childcare centers
+                        </p>
+                        <a href="menu.html" class="home__button">
+                            Let me see the menu
+                        </a>
+                    </div>
+                    <div class="home__images">
+                        <img src="img/liquid-fruit.png" alt="liquid-fruit" class="home__liquid">
+
+                        <div class="home__juice-animate">
+                            <img src="img/juice.png" alt="juice-image" class="home__juice">
+                        </div>
+                        <img src="img/apple1.png" alt="apple1 image" class="home__apple1">
+                        <img src="img/apple2.png" alt="apple2 image" class="home__apple2">
+
+                        <div>
+                            <img src="img/leaf.png" alt="leaf image" class="home__leaf">
+                            <img src="img/leaf.png" alt="leaf image" class="home__leaf">
+                            <img src="img/leaf.png" alt="leaf image" class="home__leaf">
+                            <img src="img/leaf.png" alt="leaf image" class="home__leaf">
+                            <img src="img/leaf.png" alt="leaf image" class="home__leaf">
+                            <img src="img/leaf.png" alt="leaf image" class="home__leaf">
+
+                        </div>
+
+                    
+
+                    </div>
+        
+
+                </div>
+
+            </section>
+        </main>
+
+        <!--=============== GSAP ===============-->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js "></script> -->
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+    </body>
+</html>
